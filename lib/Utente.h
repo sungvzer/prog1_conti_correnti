@@ -60,3 +60,18 @@ void elimina_utenti(Utente *utenti[], int numero_utenti);
  */
 int cerca_utente_nome_cognome(Utente *utenti[], int numero_utenti, char *nome,
                               char *cognome);
+
+/**
+ * Cerca un utente all'interno di un vettore per codice univoco.
+ *
+ * NOTA: La ricerca è sensibile alla differenza tra lettere maiuscole e
+ * minuscole
+ *
+ * @param utenti il vettore di utenti all'interno del quale effettuare la
+ * ricerca
+ * @param numero_utenti la dimensione del vettore
+ * @param codice il codice dell'utente da cercare
+ * @returns -1 se l'utente non è stato trovato, altrimenti l'indice all'interno
+ * del vettore
+ */
+int cerca_utente_codice(Utente *utenti[], int numero_utenti, char *codice);

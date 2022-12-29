@@ -3,12 +3,11 @@
  * Salvatore Gargano <salvatore.gargano001@studenti.uniparthenope.it>
  */
 
+#include <Definizioni.h>
 #include <Random.h>
 #include <Utente.h>
 #include <stdlib.h>
 #include <string.h>
-
-#include "Definizioni.h"
 
 Utente *crea_utente(char *nome, char *cognome) {
   Utente *nuovo_utente = malloc(sizeof(Utente));
@@ -37,6 +36,17 @@ int cerca_utente_nome_cognome(Utente *utenti[], int numero_utenti, char *nome,
 
     // L'utente è stato trovato, ritorna l'indice corretto
     return i;
+  }
+  return -1;
+}
+
+int cerca_utente_codice(Utente *utenti[], int numero_utenti, char *codice) {
+  for (int i = 0; i < numero_utenti; i++) {
+    Utente *utente = utenti[i];
+    if (strncmp(utente->codice, codice, DimensioneStringa) == 0) {
+      // Se i codici sono uguali, ritorna l'indice corretto
+      return i;
+    }
   }
   return -1;
 }
