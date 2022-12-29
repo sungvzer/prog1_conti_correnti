@@ -1,6 +1,5 @@
 /**
- * Questo file contiene le definizioni per le necessarie alla stampa su
- * terminale
+ * Questo file contiene le definizioni necessarie alla stampa su terminale
  * Salvatore Gargano <salvatore.gargano001@studenti.uniparthenope.it>
  */
 #pragma once
