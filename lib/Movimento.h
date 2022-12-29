@@ -6,6 +6,7 @@
 
 #pragma once
 
+#include <Data.h>
 #include <Definizioni.h>
 
 /**
@@ -13,12 +14,14 @@
  * @param importo l'importo del movimento
  * @param destinatario il codice univoco del destinatario
  * @param causale la causale del movimento
+ * @param data la data del movimento
  */
 typedef struct {
   // Nel mondo reale, per questa categoria di applicazioni il tipo più adatto
   // sarebbe un tipo intero in quanto non permette gli errori di arrotondamento
   // tipici dei tipi a virgola mobile
   float importo;
+  Data data;
   char destinatario[DimensioneCodiceUnivoco];
   char causale[DimensioneStringa];
 } Movimento;
