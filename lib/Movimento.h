@@ -13,6 +13,6 @@ typedef struct {
   // sarebbe un tipo intero in quanto non permette gli errori di arrotondamento
   // tipici dei tipi a virgola mobile
   float importo;
-  char destinatario[DimensioneStringa];
+  char destinatario[DimensioneCodiceUnivoco];
   char descrizione[DimensioneStringa];
 } Movimento;
