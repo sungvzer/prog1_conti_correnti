@@ -7,6 +7,7 @@
 #include <Movimento.h>
 #include <Random.h>
 #include <Utente.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -56,6 +57,13 @@ void elimina_utenti(Utente *utenti[], int numero_utenti) {
   for (int i = 0; i < numero_utenti; i++) {
     free(utenti[i]);
     utenti[i] = NULL;
+  }
+}
+
+void stampa_movimenti_utente(Utente *utente) {
+  printf("Movimenti dell'utente %s %s:\n", utente->nome, utente->cognome);
+  for (int i = 0; i < utente->numero_movimenti; i++) {
+    stampa_movimento(utente->movimenti[i]);
   }
 }
 

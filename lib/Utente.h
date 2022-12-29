@@ -84,3 +84,9 @@ int cerca_utente_codice(Utente *utenti[], int numero_utenti, char *codice);
  * stato raggiunto
  */
 int aggiungi_movimento(Utente *utente, Movimento movimento);
+
+/**
+ * Stampa a video i movimenti dell'utente
+ * @param utente l'utente del quale visualizzare i movimenti
+ */
+void stampa_movimenti_utente(Utente *utente);
