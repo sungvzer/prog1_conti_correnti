@@ -4,6 +4,7 @@
  */
 
 #include <Definizioni.h>
+#include <Movimento.h>
 #include <Random.h>
 #include <Utente.h>
 #include <stdlib.h>
@@ -56,4 +57,16 @@ void elimina_utenti(Utente *utenti[], int numero_utenti) {
     free(utenti[i]);
     utenti[i] = NULL;
   }
+}
+
+int aggiungi_movimento(Utente *utente, Movimento movimento) {
+  if (utente->numero_movimenti == MaxNumeroMovimenti) {
+    return -1;
+  }
+
+  // Aggiunge il movimento ed incrementa il numero di movimenti dell'utente
+  int indice = utente->numero_movimenti;
+  utente->movimenti[indice] = movimento;
+  utente->numero_movimenti++;
+  return indice;
 }

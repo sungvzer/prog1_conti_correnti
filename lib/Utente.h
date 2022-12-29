@@ -75,3 +75,12 @@ int cerca_utente_nome_cognome(Utente *utenti[], int numero_utenti, char *nome,
  * del vettore
  */
 int cerca_utente_codice(Utente *utenti[], int numero_utenti, char *codice);
+
+/**
+ * Aggiunge un movimento all'utente
+ * @param utente l'utente al quale aggiungere un movimento
+ * @param movimento il movimento da aggiungere
+ * @returns il nuovo indice del movimento, o -1 se il limite di movimenti è
+ * stato raggiunto
+ */
+int aggiungi_movimento(Utente *utente, Movimento movimento);
