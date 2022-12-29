@@ -6,4 +6,4 @@
 
 #define DimensioneStringa 1024
 #define DimensioneCodiceUnivoco 17
-#define NumeroMovimenti 200
+#define MaxNumeroMovimenti 200

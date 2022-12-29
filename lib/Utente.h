@@ -24,7 +24,7 @@ typedef struct {
   // viene usata una stringa per descrivere il codice dell'utente
   char codice[DimensioneCodiceUnivoco];
 
-  Movimento movimenti[NumeroMovimenti];
+  Movimento movimenti[MaxNumeroMovimenti];
   int numero_movimenti;
 
 } Utente;
