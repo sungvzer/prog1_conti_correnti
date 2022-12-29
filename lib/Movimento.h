@@ -14,5 +14,5 @@ typedef struct {
   // tipici dei tipi a virgola mobile
   float importo;
   char destinatario[DimensioneCodiceUnivoco];
-  char descrizione[DimensioneStringa];
+  char causale[DimensioneStringa];
 } Movimento;
