@@ -7,9 +7,8 @@
 #include <Utente.h>
 #include <Utility.h>
 
-// Filtra i movimenti di un utente per una data specifica
-static int filtra_movimenti_data(Utente* utente, Data data, Movimento output[],
-                                 int dim_output) {
+int filtra_movimenti_data(Utente* utente, Data data, Movimento output[],
+                          int dim_output) {
   int indice_output = 0;
 
   // Finché non ho raggiunto la dimensione dell'output o il numero di

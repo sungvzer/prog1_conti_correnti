@@ -44,3 +44,14 @@ int lista_movimenti_per_data_codice(Utente* utenti[], int numero_utenti,
                                     char* codice, Data data,
                                     Movimento movimenti[],
                                     int dimensione_movimenti);
+
+/**
+ * Filtra i movimenti di un utente per una specifica data
+ * @param utente l'utente del quale filtrare i movimenti
+ * @param data la data per la quale filtrare i movimenti
+ * @param output il vettore di output dei movimenti trovati
+ * @param dim_output la dimensione del vettore di output
+ * @returns il numero di movimenti trovati ed inseriti nel vettore di output
+ */
+int filtra_movimenti_data(Utente* utente, Data data, Movimento output[],
+                          int dim_output);

@@ -97,7 +97,6 @@ void stampa_utente(Utente *utente) {
   printf("Saldo: %s%.02f%s\n", colore, saldo, ANSI_RESET);
 
   if (utente->numero_movimenti > 0) {
-    printf("Movimenti:\n");
     stampa_movimenti_utente(utente);
   }
 }
