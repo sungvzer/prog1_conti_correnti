@@ -17,7 +17,7 @@ Utente *crea_utente(char *nome, char *cognome) {
 
   nuovo_utente->numero_movimenti = 0;
 
-  genera_stringa_randomica(nuovo_utente->codice, DimensioneCodiceUnivoco - 1);
+  genera_stringa_randomica(nuovo_utente->codice, DimensioneCodiceUtente - 1);
 
   strncpy(nuovo_utente->nome, nome, DimensioneStringa);
   strncpy(nuovo_utente->cognome, cognome, DimensioneStringa);

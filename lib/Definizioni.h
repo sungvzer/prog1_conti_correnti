@@ -5,5 +5,5 @@
 #pragma once
 
 #define DimensioneStringa 1024
-#define DimensioneCodiceUnivoco 17
+#define DimensioneCodiceUtente 5
 #define MaxNumeroMovimenti 200

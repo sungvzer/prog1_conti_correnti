@@ -33,7 +33,7 @@ int lista_movimenti_per_data_nome_cognome(Utente* utenti[], int numero_utenti,
  * in una fissata data
  * @param utenti la lista di utenti
  * @param numero_utenti la dimensione della lista di utenti
- * @param codice il codice univoco del conto
+ * @param codice il codice del conto
  * @param data la data per la quale filtrare i movimenti
  * @param movimenti il vettore di output dei movimenti trovati
  * @param dimensione_movimenti la dimensione del vettore di output

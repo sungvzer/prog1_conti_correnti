@@ -13,7 +13,7 @@
  * Un utente possessore di un conto
  * @param nome il nome dell'utente
  * @param cognome il cognome dell'utente
- * @param codice identificativo univoco formato da caratteri esadecimali
+ * @param codice identificativo formato da caratteri esadecimali
  * @param movimenti la lista dei movimenti eseguiti
  * @param numero_movimenti il numero di movimenti eseguiti
  */
@@ -22,7 +22,7 @@ typedef struct {
   char cognome[DimensioneStringa];
 
   // viene usata una stringa per descrivere il codice dell'utente
-  char codice[DimensioneCodiceUnivoco];
+  char codice[DimensioneCodiceUtente];
 
   Movimento movimenti[MaxNumeroMovimenti];
   int numero_movimenti;
@@ -62,7 +62,7 @@ int cerca_utente_nome_cognome(Utente *utenti[], int numero_utenti, char *nome,
                               char *cognome);
 
 /**
- * Cerca un utente all'interno di un vettore per codice univoco.
+ * Cerca un utente all'interno di un vettore per codice utente.
  *
  * NOTA: La ricerca è sensibile alla differenza tra lettere maiuscole e
  * minuscole
