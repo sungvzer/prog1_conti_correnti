@@ -17,7 +17,7 @@ void stampa_movimento(Movimento movimento) {
 
   printf("Movimento {\n");
   printf("  causale: %s,\n", movimento.causale);
-  printf("  destinatario: %s,\n", movimento.destinatario);
+  printf("  beneficiario: %s,\n", movimento.beneficiario);
   printf("  importo: %s%.02f%s,\n", colore, movimento.importo, ANSI_RESET);
   printf("  data: %02d/%02d/%04d,\n", movimento.data.giorno,
          movimento.data.mese, movimento.data.anno);

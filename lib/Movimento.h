@@ -12,7 +12,7 @@
 /**
  * Un movimento bancario
  * @param importo l'importo del movimento
- * @param destinatario il codice univoco del destinatario
+ * @param beneficiario il beneficiario del movimento
  * @param causale la causale del movimento
  * @param data la data del movimento
  */
@@ -22,7 +22,7 @@ typedef struct {
   // tipici dei tipi a virgola mobile
   float importo;
   Data data;
-  char destinatario[DimensioneCodiceUnivoco];
+  char beneficiario[DimensioneStringa];
   char causale[DimensioneStringa];
 } Movimento;
 
