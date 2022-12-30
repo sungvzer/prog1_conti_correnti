@@ -5,5 +5,6 @@ SET(SOURCES
     Movimento.c
     Data.c
     Utility.c
+    Terminale.c
 )
 add_executable(project ${SOURCES})
