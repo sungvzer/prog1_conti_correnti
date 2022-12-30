@@ -6,6 +6,7 @@
 #include <Movimento.h>
 #include <Terminale.h>
 #include <stdio.h>
+#include <string.h>
 
 void stampa_movimento(Movimento movimento) {
   const char* colore = ANSI_RESET;
@@ -22,4 +23,14 @@ void stampa_movimento(Movimento movimento) {
   printf("  data: %02d/%02d/%04d,\n", movimento.data.giorno,
          movimento.data.mese, movimento.data.anno);
   printf("}\n");
+}
+Movimento crea_movimento(float importo, char* beneficiario, char* causale,
+                         Data data) {
+  Movimento nuovo;
+  nuovo.importo = importo;
+  nuovo.data = data;
+  strncpy(nuovo.beneficiario, beneficiario, DimensioneStringa);
+  strncpy(nuovo.causale, causale, DimensioneStringa);
+
+  return nuovo;
 }

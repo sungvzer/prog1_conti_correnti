@@ -31,3 +31,14 @@ typedef struct {
  * @param movimento il movimento da visualizzare
  */
 void stampa_movimento(Movimento movimento);
+
+/**
+ * Crea un movimento bancario
+ * @param importo l'importo del movimento
+ * @param beneficiario il beneficiario del movimento
+ * @param causale la causale del movimento
+ * @param data la data del movimento
+ * @returns il nuovo movimento
+ */
+Movimento crea_movimento(float importo, char* beneficiario, char* causale,
+                         Data data);
