@@ -21,12 +21,15 @@ void prompt(int* selezione) {
     printf("3: Ricercare utente per nome e cognome\n");
     printf("4: Ricercare utente per codice\n");
     printf("5: Aggiungere movimento a utente per codice\n");
+    printf("6: Aggiungere movimento a utente per nome e cognome\n");
+    printf("7: Lista movimenti per data per codice\n");
+    printf("8: Lista movimenti per data per nome e cognome\n");
     printf("0: Uscire\n");
     printf("> ");
 
     fgets(input_utente, DimensioneStringa, stdin);
     sscanf(input_utente, "%d", selezione);
-  } while (*selezione < 0 || *selezione > 5);
+  } while (*selezione < 0 || *selezione > 8);
 }
 
 void input_stringa(char* stringa, int lunghezza) {
