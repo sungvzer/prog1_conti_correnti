@@ -6,6 +6,7 @@
 #include <Definizioni.h>
 #include <Movimento.h>
 #include <Random.h>
+#include <Terminale.h>
 #include <Utente.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -77,4 +78,26 @@ int aggiungi_movimento(Utente *utente, Movimento movimento) {
   utente->movimenti[indice] = movimento;
   utente->numero_movimenti++;
   return indice;
+}
+
+float saldo_utente(Utente *utente) {
+  float saldo = 0;
+  for (int i = 0; i < utente->numero_movimenti; i++) {
+    saldo += utente->movimenti[i].importo;
+  }
+  return saldo;
+}
+
+void stampa_utente(Utente *utente) {
+  float saldo = saldo_utente(utente);
+  printf("Utente n.%s (%s %s):\n", utente->codice, utente->cognome,
+         utente->nome);
+
+  char *colore = saldo < 0 ? ANSI_ROSSO : ANSI_VERDE;
+  printf("Saldo: %s%.02f%s\n", colore, saldo, ANSI_RESET);
+
+  if (utente->numero_movimenti > 0) {
+    printf("Movimenti:\n");
+    stampa_movimenti_utente(utente);
+  }
 }

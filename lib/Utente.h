@@ -90,3 +90,15 @@ int aggiungi_movimento(Utente *utente, Movimento movimento);
  * @param utente l'utente del quale visualizzare i movimenti
  */
 void stampa_movimenti_utente(Utente *utente);
+
+/**
+ * Stampa a video i dati dell'utente
+ * @param utente l'utente del quale visualizzare i dati
+ */
+void stampa_utente(Utente *utente);
+
+/**
+ * Calcola il saldo di un utente a partire dai suoi movimenti
+ * @param utente l'utente del quale calcolare il saldo
+ */
+float saldo_utente(Utente *utente);
