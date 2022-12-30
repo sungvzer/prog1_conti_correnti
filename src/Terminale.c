@@ -27,7 +27,7 @@ void prompt(int* selezione) {
     printf("0: Uscire\n");
     printf("> ");
 
-    fgets(input_utente, DimensioneStringa, stdin);
+    input_stringa(input_utente, DimensioneStringa);
     sscanf(input_utente, "%d", selezione);
   } while (*selezione < 0 || *selezione > 8);
 }
