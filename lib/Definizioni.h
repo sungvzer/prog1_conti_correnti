@@ -7,3 +7,4 @@
 #define DimensioneStringa 1024
 #define DimensioneCodiceUtente 5
 #define MaxNumeroMovimenti 200
+#define NumeroUtenti 10
