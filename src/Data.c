@@ -24,7 +24,7 @@ int bisestile(int anno) {
 }
 
 int controlla_data(Data data) {
-  if (data.giorno > 31 || data.giorno < 28) {
+  if (data.giorno > 31 || data.giorno < 1) {
     // Ignora casi al 100% non validi
     return 0;
   }
