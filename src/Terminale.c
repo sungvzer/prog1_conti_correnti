@@ -14,17 +14,22 @@ void prompt(int* selezione) {
     // Separatore
     printf("-------------------------\n");
 
-    printf("Conti correnti v1.0\n");
+    printf("%sConti correnti v1.0%s\n", ANSI_VERDE, ANSI_RESET);
     printf("Selezionare l'operazione:\n");
-    printf("1: Visualizzare utenti\n");
-    printf("2: Aggiungere utente\n");
-    printf("3: Ricercare utente per nome e cognome\n");
-    printf("4: Ricercare utente per codice\n");
-    printf("5: Aggiungere movimento a utente per codice\n");
-    printf("6: Aggiungere movimento a utente per nome e cognome\n");
-    printf("7: Lista movimenti per data per codice\n");
-    printf("8: Lista movimenti per data per nome e cognome\n");
-    printf("0: Uscire\n");
+    printf("%s1%s: Visualizzare utenti\n", ANSI_VERDE, ANSI_RESET);
+    printf("%s2%s: Aggiungere utente\n", ANSI_VERDE, ANSI_RESET);
+    printf("%s3%s: Ricercare utente per nome e cognome\n", ANSI_VERDE,
+           ANSI_RESET);
+    printf("%s4%s: Ricercare utente per codice\n", ANSI_VERDE, ANSI_RESET);
+    printf("%s5%s: Aggiungere movimento a utente per codice\n", ANSI_VERDE,
+           ANSI_RESET);
+    printf("%s6%s: Aggiungere movimento a utente per nome e cognome\n",
+           ANSI_VERDE, ANSI_RESET);
+    printf("%s7%s: Lista movimenti per data per codice\n", ANSI_VERDE,
+           ANSI_RESET);
+    printf("%s8%s: Lista movimenti per data per nome e cognome\n", ANSI_VERDE,
+           ANSI_RESET);
+    printf("%s0%s: Uscire\n", ANSI_VERDE, ANSI_RESET);
     printf("> ");
 
     input_stringa(input_utente, DimensioneStringa);
