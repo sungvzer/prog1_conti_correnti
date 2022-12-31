@@ -245,10 +245,6 @@ int main(int argc, char* argv[]) {
           break;
         }
 
-        Data data;
-        printf("Data da ricercare\n");
-        input_data(&data);
-
         Utente* utente = utenti[indice];
         output_movimenti_utente_in_data(utente);
 
